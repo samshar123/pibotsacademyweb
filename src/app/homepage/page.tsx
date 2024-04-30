@@ -3,7 +3,7 @@
 // Import useState from 'react' library
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import styles from "../Home/home.module.css";
+import styles from "../homepage/home.module.css";
 import Image from "next/image";
 import robo from "../../../public/robo.png";
 import img1 from "../../../public/imgtxt.png";
@@ -168,7 +168,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Boat on Calm Water"
                 />
               </div>
@@ -176,7 +176,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Wintry Mountain Landscape"
                 />
               </div>
@@ -186,7 +186,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Mountains in the Clouds"
                 />
               </div>
@@ -194,7 +194,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Boat on Calm Water"
                 />
               </div>
@@ -204,7 +204,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Waves at Sea"
                 />
               </div>
@@ -212,7 +212,7 @@ export default function home() {
               <div className={styles.imgcard}>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                  className="w-100 shadow-1-strong rounded mb-4"
+                  className="w-100 shadow-1-strong rounded "
                   alt="Yosemite National Park"
                 />
               </div>
