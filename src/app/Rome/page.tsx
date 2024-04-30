@@ -3,7 +3,7 @@
 // Import useState from 'react' library
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import styles from "../home/home.module.css";
+import styles from "../Rome/home.module.css";
 import Image from "next/image";
 import robo from "../../../public/robo.png";
 import img1 from "../../../public/imgtxt.png";
