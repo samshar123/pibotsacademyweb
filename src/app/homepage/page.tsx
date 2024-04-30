@@ -13,8 +13,8 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import robo2 from "../../../public/robo2.png";
 import Sparkles from "react-sparkle";
 import crs1 from "../../../public/course1.png";
-import crs2 from "../../../public/course2.png"
-import crs3 from "../../../public/course3.png"
+import crs2 from "../../../public/course2.png";
+import crs3 from "../../../public/course3.png";
 import robo3 from "../../../public/robo3.png";
 import team1 from "../../../public/team2.png";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -22,47 +22,31 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
-import { CForm ,CCol ,CFormInput , CFormSelect,CFormCheck ,CButton ,CFormTextarea } from '@coreui/react';
-import "../../app/globals.css"
-import Navbar from "../components/Navbar/page"
+import {
+  CForm,
+  CCol,
+  CFormInput,
+  CFormSelect,
+  CFormCheck,
+  CButton,
+  CFormTextarea,
+} from "@coreui/react";
+import "../../app/globals.css";
+import Navbar from "../components/Navbar/page";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { BsArrowUpSquareFill } from "react-icons/bs";
 
-
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction(): void {
-  const scrollUpLink = document.getElementById("scrollUpLink");
-  if (scrollUpLink !== null) {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-      scrollUpLink.style.display = "block";
-    } else {
-      scrollUpLink.style.display = "none";
-    }
-  }
-}
-
-
 export default function home() {
-
- 
-  
-
   return (
-    
     <section id={styles.home}>
+      <Link href={"#home"}>
+        <FaSquareWhatsapp className={styles.whatslogo} />{" "}
+      </Link>
+      <Link href={"#home"} id="scrollUpLink" style={{ display: "none" }}>
+        <BsArrowUpSquareFill className={styles.upicon} />
+      </Link>
 
-<Link href={"#home"}><FaSquareWhatsapp className={styles.whatslogo} /> </Link> 
-<Link href={"#home"} id="scrollUpLink" style={{display:"none"}}>
-  <BsArrowUpSquareFill className={styles.upicon} />
-</Link>
-
-
-       
       <div className="container">
-      
         <Sparkles
           color="orange"
           count={20}
@@ -309,98 +293,106 @@ export default function home() {
       </div>
 
       <div id={styles.contact}>
-      <div className={styles.teamhead}>
+        <div className={styles.teamhead}>
           <h2>contact Us</h2>
           <h5 className={styles.coursesub}>Reach us</h5>
         </div>
         <div className="container">
-            <div className="row">
-                <div className={`col-lg-4 col-12 ${styles.conticon}`}>
-                    <div className={styles.conticon1}>
-                        <div className={styles.iconcont}>
-                       <h1><MdEmail  className={styles.icon}/></h1> 
-
-                        </div>
-                        <div className={styles.continfo}>
-                            <h2>
-                                Email
-                            </h2>
-                            <p>mail@pibots.in</p>
-
-                        </div>
-
-                    </div>
-                    <div className={styles.conticon1}>
-                        <div className={styles.iconcont}>
-                       <h1><FaPhoneAlt  className={styles.icon}/></h1> 
-
-                        </div>
-                        <div className={styles.continfo}>
-                            <h2>
-                            Call
-                            </h2>
-                            <p>+91 9188411223</p>
-
-                        </div>
-
-                    </div>
-                    <div className={styles.conticon1}>
-                        <div className={styles.iconcont}>
-                       <h1><IoLocationSharp  className={styles.icon}/></h1> 
-
-                        </div>
-                        <div className={styles.continfo}>
-                            <h2>
-                            Location
-                            </h2>
-                            <p>Areekode , Malappuram</p>
-
-                        </div>
-
-                    </div>
-
+          <div className="row">
+            <div className={`col-lg-4 col-12 ${styles.conticon}`}>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <MdEmail className={styles.icon} />
+                  </h1>
                 </div>
-                <div className={`col-lg-8 col-12 ${styles.contform}`}>
-                <CForm
-                 action="https://formspree.io/f/xbjerael"
-                 method="POST" 
-                className="row g-3">
-  <CCol md={6}>
-    <CFormInput className={styles.label} name="name" label="Name" type="text" id="inputEmail4"  placeholder="Your Name" />
-  </CCol>
-  <CCol md={6}>
-    <CFormInput  name="email" label="Email"    type="email" id="inputEmail4" placeholder="Your Email" />
-  </CCol>
-  <CCol xs={12}>
-    <CFormInput name="subject" label="Subject" type="text" id="inputMessage"  placeholder="your subject here" />
-  </CCol>
-  <CCol xs={12}>
-  <CFormTextarea name="message"
- 
-  id="floatingTextarea"
-  label="Message"
-  
-  placeholder="Your message"
-></CFormTextarea>
-  </CCol>
-
- 
- 
-  
-  <CCol xs={12} style={{display:"flex" , justifyContent:"end"}}>
-    <CButton style={{backgroundColor:"transparent" , color:"#ff6a00"}}  type="submit">Send <FaLongArrowAltRight className={styles.arrow2} /> </CButton>
-  </CCol>
-</CForm>
-
+                <div className={styles.continfo}>
+                  <h2>Email</h2>
+                  <p>mail@pibots.in</p>
                 </div>
-
+              </div>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <FaPhoneAlt className={styles.icon} />
+                  </h1>
+                </div>
+                <div className={styles.continfo}>
+                  <h2>Call</h2>
+                  <p>+91 9188411223</p>
+                </div>
+              </div>
+              <div className={styles.conticon1}>
+                <div className={styles.iconcont}>
+                  <h1>
+                    <IoLocationSharp className={styles.icon} />
+                  </h1>
+                </div>
+                <div className={styles.continfo}>
+                  <h2>Location</h2>
+                  <p>Areekode , Malappuram</p>
+                </div>
+              </div>
             </div>
+            <div className={`col-lg-8 col-12 ${styles.contform}`}>
+              <CForm
+                action="https://formspree.io/f/xbjerael"
+                method="POST"
+                className="row g-3"
+              >
+                <CCol md={6}>
+                  <CFormInput
+                    className={styles.label}
+                    name="name"
+                    label="Name"
+                    type="text"
+                    id="inputEmail4"
+                    placeholder="Your Name"
+                  />
+                </CCol>
+                <CCol md={6}>
+                  <CFormInput
+                    name="email"
+                    label="Email"
+                    type="email"
+                    id="inputEmail4"
+                    placeholder="Your Email"
+                  />
+                </CCol>
+                <CCol xs={12}>
+                  <CFormInput
+                    name="subject"
+                    label="Subject"
+                    type="text"
+                    id="inputMessage"
+                    placeholder="your subject here"
+                  />
+                </CCol>
+                <CCol xs={12}>
+                  <CFormTextarea
+                    name="message"
+                    id="floatingTextarea"
+                    label="Message"
+                    placeholder="Your message"
+                  ></CFormTextarea>
+                </CCol>
 
+                <CCol
+                  xs={12}
+                  style={{ display: "flex", justifyContent: "end" }}
+                >
+                  <CButton
+                    style={{ backgroundColor: "transparent", color: "#ff6a00" }}
+                    type="submit"
+                  >
+                    Send <FaLongArrowAltRight className={styles.arrow2} />{" "}
+                  </CButton>
+                </CCol>
+              </CForm>
+            </div>
+          </div>
         </div>
-
-
       </div>
-    
     </section>
   );
 }
