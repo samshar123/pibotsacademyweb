@@ -20,6 +20,12 @@
 
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
+  .form-control:focus{
+    background-color: #1a1a1b;
+    border: 0px solid #1a1a1b;
+    color: #ff6a00;
+
+  }
   #inputMessage::placeholder {
     color: #ff6a00;
     opacity: .5;

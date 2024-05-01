@@ -112,34 +112,37 @@ export default function home() {
           <Image alt="home image" className={styles.roboimg2} src={robo2} />
         </div>
       </div>
-      <div id={styles.coursehome}>
-        <div className={styles.aboutcont}>
-          <div className="container">
-            <h2>Courses</h2>
-            <h5 className={styles.coursesub}>Our featured Courses</h5>
-            <br />
-            <br />
-            <div className="row">
-              <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                <Image className={styles.crsimg} src={crs1} alt="" />
+      <section id="course">
+        <div id={styles.coursehome}>
+          <div className={styles.aboutcont}>
+            <div className="container">
+              <h2>Courses</h2>
+              <h5 className={styles.coursesub}>Our featured Courses</h5>
+              <br />
+              <br />
+              <div className="row">
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs1} alt="" />
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs2} alt="" />
+                </div>
+                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                  <Image className={styles.crsimg} src={crs3} alt="" />
+                </div>
               </div>
-              <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                <Image className={styles.crsimg} src={crs2} alt="" />
-              </div>
-              <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
-                <Image className={styles.crsimg} src={crs3} alt="" />
-              </div>
-            </div>
 
-            <div style={{ paddingTop: "4rem" }}>
-              <h6>
-                Happy moments <FaLongArrowAltRight className={styles.arrow2} />{" "}
-              </h6>
+              <div style={{ paddingTop: "4rem" }}>
+                <h6>
+                  Happy moments{" "}
+                  <FaLongArrowAltRight className={styles.arrow2} />{" "}
+                </h6>
+              </div>
             </div>
+            <Image alt="home image" className={styles.roboimg3} src={robo3} />
           </div>
-          <Image alt="home image" className={styles.roboimg3} src={robo3} />
         </div>
-      </div>
+      </section>
 
       <div id={styles.galleryhome}>
         <div className="container">

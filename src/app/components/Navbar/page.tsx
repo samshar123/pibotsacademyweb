@@ -60,7 +60,7 @@ export default function Navbar() {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Course</MDBNavbarLink>
+                <MDBNavbarLink href="#course">Course</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href="#">Gallery</MDBNavbarLink>
