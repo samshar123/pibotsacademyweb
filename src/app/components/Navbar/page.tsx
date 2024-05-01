@@ -21,14 +21,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // const position = window.pageYOffset;
-      // setScrollPosition(position);
+      const position = window.pageYOffset;
+      setScrollPosition(position);
     };
 
-    // window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      // window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
