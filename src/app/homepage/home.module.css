@@ -135,18 +135,7 @@ transition: 1s ease-in-out;
     background-color: #1a1a1b;
     
 }
-@media (max-width:768px) {
-   .imghome{
-    height: 40vh;
-   }
-   #home{
-    padding-top: 7rem;
-   }
-   /* #home{
-    margin-bottom: 5rem;
-   } */
-   
-}
+
 .homeimg{
     width: 350px;
     height: 350px;
@@ -172,7 +161,24 @@ transition: 1s ease-in-out;
   animation-direction: alternate;
   
 }
+@media (max-width:768px) {
+  .homeimg{
+    left: 30PX;
 
+  }
+  .imghome{
+   height: 40vh;
+   
+   
+  }
+  #home{
+   padding-top: 7rem;
+  }
+  /* #home{
+   margin-bottom: 5rem;
+  } */
+  
+}
 .roboimg{
     width: 200px;
     height: 200px;
@@ -585,7 +591,7 @@ transition: 1s ease-in-out;
   padding-bottom: 2rem;
   }
   .homecont{
-    margin-bottom: 100px;
+    margin-bottom: 180px;
   }
   .homecircle{
     width: 250px;
