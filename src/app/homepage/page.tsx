@@ -121,13 +121,13 @@ export default function home() {
               <br />
               <br />
               <div className="row">
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
                   <Image className={styles.crsimg} src={crs1} alt="" />
                 </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
                   <Image className={styles.crsimg} src={crs2} alt="" />
                 </div>
-                <div className={`col-lg-4 col-12 ${styles.coursecard}`}>
+                <div className={` col-lg-4 col-12 ${styles.coursecard}`}>
                   <Image className={styles.crsimg} src={crs3} alt="" />
                 </div>
               </div>

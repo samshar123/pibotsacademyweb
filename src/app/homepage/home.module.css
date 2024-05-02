@@ -295,7 +295,7 @@ transition: 1s ease-in-out;
   .coursecard{
     /* background-color: #ff6a00; */
    
-    width: 90%;
+    width: 33%;
     margin-bottom: 2rem;
 
   }
@@ -492,6 +492,10 @@ transition: 1s ease-in-out;
   }
   .member{
     margin-bottom: 1rem;
+  }
+  .coursecard{
+    width: 100%;
+
   }
   
 }
