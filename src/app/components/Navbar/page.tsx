@@ -38,7 +38,7 @@ export default function Navbar() {
     >
       <MDBNavbar expand="lg" className="transparent">
         <MDBContainer fluid>
-          <MDBNavbarBrand href="#">
+          <MDBNavbarBrand href="#home1">
             <Image className="navimg" alt="" src={nav} />
           </MDBNavbarBrand>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
           <MDBCollapse navbar open={openBasic} className="justify-content-end">
             <MDBNavbarNav className="flex mb-2 mb-lg-0">
               <MDBNavbarItem>
-                <MDBNavbarLink aria-current="page" href="/footer">
+                <MDBNavbarLink aria-current="page" href="#about1">
                   About us
                 </MDBNavbarLink>
               </MDBNavbarItem>
@@ -63,10 +63,13 @@ export default function Navbar() {
                 <MDBNavbarLink href="#course">Course</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Gallery</MDBNavbarLink>
+                <MDBNavbarLink href="#gallery1">Gallery</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Team</MDBNavbarLink>
+                <MDBNavbarLink href="#team1">Team</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#contact1">Contact us</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

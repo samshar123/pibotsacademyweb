@@ -46,6 +46,7 @@ export default function home() {
         <BsArrowUpSquareFill className={styles.upicon} />
       </Link>
 
+      <section id="home1">
       <div className="container">
         <Sparkles
           color="orange"
@@ -56,6 +57,7 @@ export default function home() {
           fadeOutSpeed={5}
           flicker={false}
         />
+        
         <div className="row">
           <div className={`col-lg-8 ${styles.homecont}`}>
             <div className={styles.newmov}>
@@ -75,7 +77,7 @@ export default function home() {
               </p>
             </div>
             <div>
-              <a href="#abouthome">
+              <a href="#about1">
                 <div className={styles.abtbtn}>
                   <h5>About us</h5>
                   <IoIosArrowDropright className={styles.btnicon} />
@@ -88,10 +90,14 @@ export default function home() {
             <div className={styles.homecircle}></div>
             <Image alt="home image" className={styles.homeimg} src={img1} />
           </div>
-        </div>
+        </div>  
       </div>
 
-      <div id={styles.abouthome}>
+      </section>
+
+    
+    <section id="about1">
+    <div id={styles.abouthome}>
         <div className={styles.aboutcont}>
           <div className="container">
             <h2>WELCOME TO</h2>
@@ -103,15 +109,25 @@ export default function home() {
               unleash your potential in the world of cutting-edge technology and
               innovation!
             </p>
+
+
             <div>
+              <a href="#course">
               <h6>
                 Course <FaLongArrowAltRight className={styles.arrow2} />{" "}
               </h6>
+
+              </a>
+            
             </div>
           </div>
           <Image alt="home image" className={styles.roboimg2} src={robo2} />
         </div>
       </div>
+
+    </section>
+
+   
       <section id="course">
         <div id={styles.coursehome}>
           <div className={styles.aboutcont}>
@@ -133,10 +149,14 @@ export default function home() {
               </div>
 
               <div style={{ paddingTop: "4rem" }}>
+                <a href="#gallery1">
                 <h6>
                   Happy moments{" "}
                   <FaLongArrowAltRight className={styles.arrow2} />{" "}
                 </h6>
+
+                </a>
+              
               </div>
             </div>
             <Image alt="home image" className={styles.roboimg3} src={robo3} />
@@ -144,6 +164,8 @@ export default function home() {
         </div>
       </section>
 
+
+      <section id="gallery1">
       <div id={styles.galleryhome}>
         <div className="container">
           <div className={styles.galleryhead}>
@@ -208,7 +230,12 @@ export default function home() {
         </div>
       </div>
 
-      <div id={styles.teamhome}>
+      </section>
+
+     
+     <section id="team1">
+
+     <div id={styles.teamhome}>
         <div className={styles.teamhead}>
           <h2>Team</h2>
           <h5 className={styles.coursesub}>Our Backend</h5>
@@ -295,7 +322,11 @@ export default function home() {
         </div>
       </div>
 
-      <div id={styles.contact}>
+     </section>
+
+
+<section id="contact1">
+<div id={styles.contact}>
         <div className={styles.teamhead}>
           <h2>contact Us</h2>
           <h5 className={styles.coursesub}>Reach us</h5>
@@ -396,6 +427,9 @@ export default function home() {
           </div>
         </div>
       </div>
+
+</section>
+     
     </section>
   );
 }
