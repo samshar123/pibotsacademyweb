@@ -510,7 +510,7 @@ transition: 1s ease-in-out;
 }
 
 .conticon{
-  width: 100%;
+  width: 33%;
   padding-bottom: 3rem;
 
 }
@@ -564,6 +564,9 @@ transition: 1s ease-in-out;
 @media (max-width:768px) {
   .newmov{
     width: 90%;
+  }
+  .conticon{
+    width: 100%;
   }
   .newsmore{
     display: flex;
